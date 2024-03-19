@@ -1,7 +1,15 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background: #fff;
+  margin: 0 auto;
+  width: 1440px;
 }
 
 ul {
@@ -10,7 +18,32 @@ ul {
 a {
   text-decoration: none;
 }
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+  margin: 0 auto;
+  padding: 0;
+}
 
+.header-container {
+  border-bottom: 1px solid #e7e9fc;
+  width: 1440px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+}
+.nav-item {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  gap: 40px;
+}
 .nav-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -19,6 +52,8 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-left: 156px;
+  margin-right: 76px;
 }
 .nav-logo-word {
   color: #2e2f42;
@@ -36,8 +71,15 @@ a {
 .nav-link:focus {
   color: #404bbf;
 }
+.contacts {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  gap: 40px;
+}
 .address-box {
   font-style: normal;
+  margin-left: 332px;
 }
 
 .contacts-link {
@@ -46,6 +88,7 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  display: block;
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -53,6 +96,7 @@ a {
 }
 .section-one {
   background: #2e2f42;
+  height: 600px;
 }
 .section-one-name {
   font-weight: 700;
@@ -61,6 +105,7 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  padding: 188px 472px 0 472px;
 }
 
 .button-box {
@@ -71,10 +116,26 @@ a {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+  margin: 48px 635px 0 635px;
+  border-radius: 4px;
+
+  width: 169px;
+  height: 56px;
 }
 button:hover,
 button:focus {
   background: #404bbf;
+}
+
+.section-two {
+  margin: 0;
+  height: 340px;
+}
+
+.section-two-item {
+  display: flex;
+  margin: 120px 156px 0 156px;
+  gap: 24px;
 }
 .section-two-name-list {
   font-weight: 500;
@@ -89,6 +150,7 @@ button:focus {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
 .section-three-name {
   font-weight: 700;
   font-size: 36px;
@@ -97,9 +159,18 @@ button:focus {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  padding-top: 124px;
 }
 .section-three-list {
   background-color: #ffffff;
+}
+
+.section-three-item {
+  display: flex;
+  gap: 24px;
+  margin: 72px 144px 0 168px;
+  width: 264px;
+  height: 380px;
 }
 .section-three-name-list {
   font-weight: 500;
@@ -118,7 +189,9 @@ button:focus {
 }
 .section-three {
   background: #f4f4fd;
+  height: 732px;
 }
+
 .section-four-name {
   font-weight: 700;
   font-size: 36px;
@@ -127,6 +200,13 @@ button:focus {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  padding-top: 124px;
+}
+.section-four-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 72px 156px 120px 156px;
 }
 .section-four-name-list {
   font-weight: 500;
