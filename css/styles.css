@@ -35,10 +35,10 @@ img {
 
 .container {
   max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   margin: 0 auto;
 }
+
 .section-page {
   padding: 120px 0;
 }
@@ -64,6 +64,7 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-right: 76px;
+  display: block;
 }
 .nav-logo-word {
   color: #2e2f42;
@@ -80,6 +81,7 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0 24px;
+  display: block;
 }
 
 .nav-link:hover,
@@ -99,6 +101,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  display: block;
+  padding: 24px 0;
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -143,6 +147,9 @@ button:focus {
 }
 .section-two {
   padding: 120px 0;
+}
+.section-two-name {
+  margin-bottom: 8px;
 }
 .visually-hidden {
   position: absolute;
